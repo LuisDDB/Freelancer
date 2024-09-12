@@ -1,0 +1,66 @@
+:root{
+    --blanco: #ffffff;
+    --negro:#212121;
+    --primario:#ffC107;
+    --secundario:#0097A7;
+    --gris:#757575;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 16px; /* 1 rem igual a 10 pixeles*/
+    font-family: "SUSE", sans-serif;
+}
+.titulo {
+    text-align: center;
+    font-size: 3.8rem;
+    font-weight: 425;
+
+}
+
+.titulo span{
+    font-size: 2rem;
+}
+.contenedor{
+    max-width: 120rem;
+    /* margin: 0(top) auto(right) 0(bottom) auto(left) es lo mismo que margin 0 auto,
+     porque se repetien los valores*/
+    margin: 0 auto;
+
+}
+.nav-bg{
+    background-color: var(--secundario);
+}
+
+.navegacion-principal{
+    display: flex;
+    flex-direction: column;
+}
+@media (min-width: 760px){
+    .navegacion-principal{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+.navegacion-principal a{
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    color: var(--blanco);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+
+
+
+.navegacion-principal a:hover{
+    background-color: var(--primario);
+    color: var(--negro);
+}
+
+@media (min-width: 480px){
+
+}
