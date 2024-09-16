@@ -16,6 +16,15 @@ html{
 body{
     font-size: 16px; /* 1 rem igual a 10 pixeles*/
     font-family: "SUSE", sans-serif;
+    background-image: linear-gradient(to top,var(--gris) 0%, var(--blanco) 90%);
+}
+.sombra{
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(184,184,184,0.57);
+    -moz-box-shadow: 0px 5px 15px 0px rgba(184,184,184,0.57);
+    box-shadow: 0px 5px 15px 0px rgba(184,184,184,0.57);
+    background: var(--blanco);
+    padding: 2rem;
+    border-radius: 1rem;
 }
 
 .contenedor{
@@ -59,6 +68,7 @@ h1,h2,h3{
     font-weight: 700;
 
 }
+
 /*titulos*/
 .titulo span{
     font-size: 2rem;
@@ -101,6 +111,7 @@ h1,h2,h3{
     background-size: cover;
     height: 450px;
     position: relative;
+    margin-bottom: 2rem;
 
 }
 .contenido-hero{
@@ -124,4 +135,39 @@ h1,h2,h3{
     align-items: flex-end;
 }
 
+/* Servicios*/
+
+@media  (min-width: 768px) {
+    .servicios{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        column-gap: 1.5rem;
+    }
+
+}
+
+.servicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servicio h3{
+    font-weight: normal;
+    color: var(--secundario);
+}
+.servicio p{
+    text-align: center;
+    line-height: 2;
+}
+.iconos{
+    background-color: var(--primario);
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
 
