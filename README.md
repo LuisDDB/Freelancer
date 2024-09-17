@@ -1,1 +1,1 @@
-Link: https://luisdanielprimerproyecto.netlify.app/
+Link: https://luis-freelancer-proyecto1-curso.netlify.app/
