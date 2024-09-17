@@ -100,32 +100,32 @@
 
         <section>
             <h2>Contacto</h2>
-            <form>
+            <form class="formulario">
                 <fieldset>
-                    <legend> Contactame llenando el formulacio :) </legend>
+                    <legend> Contactame llenando el formulacio</legend>
+                    <div class="contenedor-campos">
+                        <div class="campos">
+                            <label >Nombre</label>
+                            <input class="input-text" type="text" placeholder="Nombre" />
+                        </div>
 
-                    <div>
-                        <label >Nombre</label>
-                        <input type="text" placeholder="Nombre" />
-                    </div>
+                        <div class="campos">
+                            <label>Telefono</label>
+                            <input class="input-text" type="tel" placeholder="Teléfono" />
+                        </div>
 
-                    <div>
-                        <label>Telefono</label>
-                        <input type="tel" placeholder="Teléfono" />
-                    </div>
+                        <div class="campos">
+                            <label>Email</label>
+                            <input class="input-text" type="email" placeholder="Email" />
+                        </div>
 
-                    <div>
-                        <label>Email</label>
-                        <input type="email" placeholder="Email" />
-                    </div>
-
-                    <div>
-                        <label> Mensaje</label>
-                        <textarea> </textarea>
-                    </div>
-
-                    <div>
-                        <input type="submit" value="Enviar">
+                        <div class="campos">
+                            <label> Mensaje</label>
+                            <textarea class="input-text"> </textarea>
+                        </div>
+                    </div><!-- .contenedor-campo-->
+                    <div class="flex alinear-derecha ">
+                        <input class="boton w-sm-100" type="submit" value="Enviar">
                     </div>
 
                 </fieldset>
@@ -133,7 +133,7 @@
         </section>
     </main>
 
-    <footer>
+    <footer class="footer">
         <p>Todos los derechos reserados, Luis Daniel Domínguez Bazúa</p>
     </footer>
 </body>
